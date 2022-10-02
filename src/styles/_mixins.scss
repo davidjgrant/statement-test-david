@@ -1,0 +1,42 @@
+@use 'variables' as *;
+
+@mixin headers {
+  color: $color-font;
+  font-family: $font-family-header, 'Roboto';
+}
+
+@mixin body-text {
+  color: $color-font;
+  font-family: $font-family-body;
+  font-size: 15px;
+  line-height: 150%;
+  opacity: 0.5;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+@mixin container {
+  max-width: 1640px;
+  padding: $space-md;
+  margin: auto;
+}
+
+@mixin btn {
+  padding: $space-sm 40px;
+  border-radius: 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    padding: $space-sm 48px;
+  }
+}
+
+@mixin btn-primary {
+  background-color: $color-btn-primary;
+  color: white;
+}

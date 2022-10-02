@@ -1,0 +1,10 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'base' as *;
+@import './components/cart';
+@import './components/nav';
+@import './components/product';
+
+.container {
+  @include container
+}

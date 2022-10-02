@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="imgs/index.scss">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+<script defer src="main.f15d321a575692410aae.js"></script><link href="main.9a4d957d321f3d23ab5f.css" rel="stylesheet"></head>
+<body>
+  <header class="nav">
+    <nav class="nav__logo">
+      <a href="/" aria-label="Bark Logo"><img src="imgs/logo.svg" alt="Bark Logo" /></a>
+    </nav>
+    <button type="button" class="nav__cart" aria-label="open cart" data-open-cart>
+      <span class="nav__cart--count">2</span>
+      <img src="imgs/bag.svg" alt="Cart icon" />
+    </button>
+  </header>
+  <main class="product">
+    <section class="product--half banner__section">
+      <article class="product-banner__inner">
+        <h1 class="product-banner__inner__title">
+          Ornare Vulputate Elit
+        </h1>
+        <p class="product-banner__inner__description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab dolore numquam perspiciatis, rerum omnis itaque consequuntur temporibus cumque dolorem quaerat excepturi vitae quia adipisci voluptatem perferendis, impedit dicta at a similique possimus commodi?
+        </p>
+      </article>
+    </section>
+    <section class="product--half product-card__section">
+      <div class="product-card__inner">
+        <div class="product-card__inner__image">
+          <picture>
+            <source media="(min-width:768px)" srcset="imgs/chicken@2x.png">
+            <img src="imgs/chicken.png" alt="Chicken Product Image">
+          </picture>
+        </div>
+        <h2 class="product-card__inner__title">
+          Natures Menu Dog Food Can Chicken
+        </h2>
+        <p class="product-card__inner__price">
+          <span class="product-card__inner__price--currency">£</span>
+          <span class="product-card__inner__price--price">22.81</span>
+        </p>
+        <button type="button" class="btn btn--primary product-card__inner__btn" aria-label="Add to Cart" data-add-to-cart>Add to Bag</button>
+      </div>
+    </section>
+  </main>
+  <aside class="cart" data-cart>
+    <header class="cart__header">
+      <h3 class="cart__header__title">Your Bag</h3>
+      <button class="cart__header__close" data-close-cart aria-label="close cart">×</button>
+    </header>
+    <main class="cart__main">
+      <ul class="cart__main__inner">
+        <li class="cart__item">
+          <img src="imgs/chicken.png" alt="" class="cart__item__image" />
+          <div class="cart__item__content">
+            <h5 class="cart__item__title">Natures Menu Dog Food Can Chicken</h5>
+            <p class="cart__item__price">
+              <span class="cart__item__price--currency">£</span>
+              <span class="cart__item__price--price">22.81</span>
+            </p>
+            <button class="cart__item__btn--remove" data-remove-from-cart>Remove</button>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <footer class="cart__summary">
+      <h4 class="cart__summary__subtotal">Subtotal: <span class="price">£22.81</span></h4>
+      <div class="cart__summary__btn-wrapper">
+        <a href="/"><button class="cart__summary__btn btn btn--primary" aria-label="Proceed to Checkout">Proceed To Checkout</button></a>
+      </div>
+      <button class="cart__summary__btn--continue btn btn--secondary" aria-label="Close Cart" data-close-cart>Continue Shopping</button>
+    </footer>
+  </aside>
+  <div class="cart__underlayer" data-close-cart></div>
+</body>
+</html>

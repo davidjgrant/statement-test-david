@@ -1,0 +1,74 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  overflow: auto;
+}
+
+h1 {
+  @include headers;
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: $space-lg;
+
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  @include headers;
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: $space-md;
+}
+
+h3 {
+  @include headers;
+  font-size: $space-sm;
+  margin-bottom: $space-sm;
+}
+
+h4 {
+  @include headers;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: $space-md;
+}
+
+h5 {
+  @include headers;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: $space-sm;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+ul {
+  list-style: none
+}
+
+p {
+  @include body-text;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+}

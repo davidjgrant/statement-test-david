@@ -1,0 +1,21 @@
+{
+  "id": 1,
+  "title": "Natures Menu Dog Food Can Chicken",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  "flavour": "chicken",
+  "animal": "Dog",
+  "media": [
+    {
+      "images": [
+        {
+          "image_1": "../assets/png/chicken.png",
+          "image_1_2x": "../assets/png/chicken@2x.png"
+        }
+      ]
+    }
+  ],
+  "price": 22.81,
+  "price_min": 20,
+  "price_max": 22.81,
+  "quantity": 10
+}
